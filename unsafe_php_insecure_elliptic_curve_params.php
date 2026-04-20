@@ -15,8 +15,6 @@ class EncryptionController extends Controller
         $rsa->setPrivateKeyFormat(RSA::PRIVATE_FORMAT_PKCS1);
 
         $hash_type = 'md5';
-
-        // Set weak elliptic curve
         $rsa->setHash('md5');
         $rsa->setMGFHash($hash_type);
         $rsa->setEncryptionMode(RSA::ENCRYPTION_PKCS1);
