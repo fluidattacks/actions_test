@@ -18,3 +18,5 @@ jobs:
 
       - uses: fluidattacks/sast-action@main
         id: scan
+        with:
+          scanner_mode: full
